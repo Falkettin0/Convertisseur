@@ -1,0 +1,27 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello MainController!{% endblock %}
+
+{% block body %}
+<form action="" method="post">
+    <p>
+        <label for="valeur">Valeur :</label>
+        <input id="valeur" type="text" name="valeur">
+    </p>
+    <p>
+        <label for="start">Base de départ :</label>
+        <select name="start" id="start">
+            <option value="2">Base 2</option>
+            <option value="10">Base 10</option>
+        </select>
+
+        <label for="stop">Base d'arrivée</label>
+        <select name="stop" id="stop">
+            <option value="2">Base 2</option>
+            <option value="10">Base 10</option>
+        </select>
+    </p>
+
+    <input type="submit" value="Valider">
+</form>
+{% endblock %}
